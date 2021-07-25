@@ -39,8 +39,9 @@
    
     width: 1240px;
     height: 15%;
-    border-width: 10px double black;
-    border-color: brown;
+    border-radius: 5%;
+    border: 5px solid rgb(123, 192, 248);
+    
 }
 
 .coordonnees{
@@ -183,7 +184,7 @@
 }
 .leSecondaire{
     border-radius: 10%;
-    border: 5px solid rgb(123, 192, 248);
-    background-color:azure ;
+    border: 5px solid rgb(255, 235, 255);
+    background-image:linear-gradient(to top,rgb(255, 255,255),rgb(255, 235, 255)) ;
 
 }
