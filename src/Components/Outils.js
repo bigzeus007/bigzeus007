@@ -1,15 +1,14 @@
-import React, { useEffect} from 'react';
+import React from 'react';
+import printJS from 'print-js';
+
+import '../App.css';
 
 function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage,addCentresInteret,addQualites,setAddQualites,setAddCentresInteret}) {
     let a=addFormation.length
-    useEffect(()=>{
-        
-    },[addFormation])
-    
    
 
     return(
-        <div className="listeOutils">
+        <div className="listeOutils" id="listOutils">
             <div> Boite a outils</div>
 
             <button id="profil" onClick={()=>{
@@ -44,6 +43,9 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             <button id="centresInteret" onClick={()=>{setAddCentresInteret([...addCentresInteret,{visible:"visible"}])}}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Centre d'intérêt</button>
+            <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],maxWidth:"900px",ignoreElements:['Outils']}) } >
+                Print Form
+            </button>
 
         </div>
     );

@@ -30,9 +30,9 @@ function App() {
       addLanguage={addLanguage} setAddLanguage={setAddLanguage} addQualites={addQualites} setAddQualites={setAddQualites} addCentresInteret={addCentresInteret}
       setAddCentresInteret={setAddCentresInteret}
       />
-      <div className="monCV">
+      <form className="monCV" id="monCV"      >
         <Entete />
-        <div className="corpsCV">
+        <div className="corpsCV" >
           
           <div className="leSecondaire">
             <Divers  />
@@ -49,7 +49,7 @@ function App() {
             
           </div>
         </div>
-      </div>
+      </form>
     </div>
   );
 }

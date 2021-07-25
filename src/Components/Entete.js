@@ -18,9 +18,9 @@ function Entete(){
                 reader.readAsDataURL(e.target.files[0]);
                 
             }}/>
-            <img src={myPreview} alt="" style={{width:"210px",height:"210px",borderRadius:"100%"}}/>
+            <img src={myPreview} alt="" />
         </div>
-        <TextareaAutosize maxRows="5" className="titreCV" defaultValue="Titre"></TextareaAutosize>
+        <TextareaAutosize maxRows="5" className="titreCV" style={{backgroundColor:"transparent"}} defaultValue="Titre"></TextareaAutosize>
         
         </div>
 
