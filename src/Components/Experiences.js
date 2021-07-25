@@ -5,8 +5,8 @@ function Experiences({addExperience}) {
         <>
         <div className="experiences" >Experiences</div>
         <div id="maExperience" className="maExperience" >
-            {addExperience.map((element)=>(
-            <div key={element.index} className="uneExperience" >
+            {addExperience.map((element,index)=>(
+            <div key={element+index} className="uneExperience" >
                 <label htmlFor="dateDebutE" className="dateDebutE">DE <input id="dateDebutE" type="date" style={{height:"30px"}}></input></label> 
                 <label htmlFor="dateFinE" className="dateFinE">A <input id="dateFinE" type="date" style={{height:"30px"}}></input></label>
                 <label htmlFor="mission" className="mission">Missions <TextareaAutosize id="mission" style={{fontSize:"14px",width:"740px"}} type="text" ></TextareaAutosize></label>

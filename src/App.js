@@ -15,8 +15,8 @@ import TextareaAutosize from 'react-textarea-autosize';
 function App() {
   
   const [profil,setProfil]=useState("");
-  const [addFormation,setAddFormation]=useState([{index:0, titre:"1", contenu:""}]);
-  const [addExperience,setAddExperience]=useState([{index:0, titre:"1", contenu:""}]);
+  const [addFormation,setAddFormation]=useState([{titre:"visible", contenu:""}]);
+  const [addExperience,setAddExperience]=useState([{titre:"visible", contenu:""}]);
   const [realisation,setRealisation]=useState("");
   const [addLanguage,setAddLanguage]=useState([{visible:"invisible"}]);
   const [addQualites,setAddQualites]=useState([{visible:"invisible"}]);

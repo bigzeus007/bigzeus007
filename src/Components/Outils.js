@@ -4,7 +4,7 @@ import printJS from 'print-js';
 import '../App.css';
 
 function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage,addCentresInteret,addQualites,setAddQualites,setAddCentresInteret}) {
-    let a=addFormation.length;
+    
     const [monProfil,setMonProfil]=useState("Masquer Profil" );
     const [mesRealisations,setMesRealisations]=useState("Masquer Realisations");
     
@@ -23,12 +23,12 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             
             <button id="addFormation" onClick={()=>{
-                setAddFormation([...addFormation,{index:a ,titre:"", contenu:""}]);
+                setAddFormation([...addFormation,{titre:"visible", contenu:""}]);
                 
                 }}
                  className="Outil" style={{display:"block",height:"40px"}}>Ajouter Formation</button>
             <button id="addExp" onClick={()=>{
-                setAddExperience([...addExperience,{index:a ,titre:"", contenu:""}]);
+                setAddExperience([...addExperience,{titre:"visible", contenu:""}]);
                 
                 }}
                  className="Outil" style={{display:"block",height:"40px"}}>Ajouter Experience</button>

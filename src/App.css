@@ -216,3 +216,20 @@ img{
     font-size:"14px";
     
 }
+
+.myDeleteButton{
+    position: absolute;
+    left: -25px;
+    top:20px;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    background-color: rgb(255, 0, 0);
+    box-shadow: violet;
+    color:white;
+    font-size: large;
+    font-weight: bolder;
+}
+[visible="invisible"]{
+    display: none;
+}
