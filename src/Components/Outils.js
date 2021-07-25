@@ -9,7 +9,7 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
    
 
     return(
-        <div className="Outils">
+        <div className="listeOutils">
             <div> Boite a outils</div>
 
             <button id="profil" onClick={()=>{

@@ -24,7 +24,7 @@ function App() {
 
   
   return (
-    <div className="App" >
+    <div className="App">
       <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} 
       addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} 
       addLanguage={addLanguage} setAddLanguage={setAddLanguage} addQualites={addQualites} setAddQualites={setAddQualites} addCentresInteret={addCentresInteret}
@@ -33,21 +33,19 @@ function App() {
       <div className="monCV">
         <Entete />
         <div className="corpsCV">
-          <div className="lePrioritaire">
-            <Profil profil={profil} setProfil={setProfil}/>
-            <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
-            <Experiences addExperience={addExperience} setAddExperience={setAddExperience}/>
-            <Realisations realisation={realisation} setRealisation={setRealisation} />
-            
-
-          </div>
+          
           <div className="leSecondaire">
             <Divers  />
             <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
             <Qualites addQualites={addQualites} setAddQualites={setAddQualites}/>
             <CentresInteret addCentresInteret={addCentresInteret} setAddCentresInteret={setAddCentresInteret}/>
+          </div>
 
-            
+          <div className="lePrioritaire">
+            <Profil profil={profil} setProfil={setProfil}/>
+            <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
+            <Experiences addExperience={addExperience} setAddExperience={setAddExperience}/>
+            <Realisations realisation={realisation} setRealisation={setRealisation} />
             
           </div>
         </div>
