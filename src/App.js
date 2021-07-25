@@ -10,6 +10,7 @@ import Profil from './Components/Profil';
 import React, { useState } from 'react';
 import CentresInteret from './Components/CentresInteret';
 import Qualites from './Components/Qualites';
+import TextareaAutosize from 'react-textarea-autosize';
 
 function App() {
   
@@ -31,10 +32,12 @@ function App() {
       setAddCentresInteret={setAddCentresInteret}
       />
       <form className="monCV" id="monCV"      >
-        <Entete />
+         
+        
         <div className="corpsCV" >
           
           <div className="leSecondaire">
+            <Entete />
             <Divers  />
             <Langues addLanguage={addLanguage} setAddLanguage={setAddLanguage}/>
             <Qualites addQualites={addQualites} setAddQualites={setAddQualites}/>
@@ -42,6 +45,7 @@ function App() {
           </div>
 
           <div className="lePrioritaire">
+            <TextareaAutosize maxRows="5" className="titreCV" style={{backgroundColor:"transparent"}} defaultValue="Titre"></TextareaAutosize>
             <Profil profil={profil} setProfil={setProfil}/>
             <Formation addFormation={addFormation} setAddFormation={setAddFormation}/>
             <Experiences addExperience={addExperience} setAddExperience={setAddExperience}/>

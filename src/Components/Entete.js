@@ -1,5 +1,5 @@
 import React, { useState} from 'react';
-import TextareaAutosize from 'react-textarea-autosize';
+
 
 
 function Entete(){
@@ -18,9 +18,9 @@ function Entete(){
                 reader.readAsDataURL(e.target.files[0]);
                 
             }}/>
-            <img src={myPreview} alt="" />
+            <img src={myPreview} alt="myPhoto" />
         </div>
-        <TextareaAutosize maxRows="5" className="titreCV" style={{backgroundColor:"transparent"}} defaultValue="Titre"></TextareaAutosize>
+        
         
         </div>
 

@@ -1,7 +1,10 @@
 import TextareaAutosize from "react-textarea-autosize";
+import '../App.css';
 function Profil({profil}) {
     return(
-        <div className="profil" style={{display:profil}}><label htmlFor="profil" style={{display:"block"}}>Profil</label><TextareaAutosize id="profil" style={{display:"block",width:"100%",backgroundColor:"transparent",borderColor:"yellowgreen",fontSize:"14px"}}/></div>
+    
+            <div id="profil" style={{display:profil}} ><label htmlFor="profil" className="profil" style={{display:"block"}}>Profil</label><TextareaAutosize style={{width:"95%",marginLeft:"20px",}} /></div>
+        
     );
 }
 export default Profil;

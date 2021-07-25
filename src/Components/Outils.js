@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import printJS from 'print-js';
 
 import '../App.css';
 
 function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage,addCentresInteret,addQualites,setAddQualites,setAddCentresInteret}) {
-    let a=addFormation.length
+    let a=addFormation.length;
+    const [monProfil,setMonProfil]=useState("Masquer Profil" );
+    const [mesRealisations,setMesRealisations]=useState("Masquer Realisations");
+    
    
 
     return(
@@ -13,9 +16,10 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             <button id="profil" onClick={()=>{
                 setProfil(profil==='' ? "none" : "");
+                setMonProfil(monProfil==="Masquer Profil" ? "Ajouter Profil" : "Masquer Profil");
                 
                 }}
-                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Profil</button>
+                 className="Outil" style={{display:"block",height:"40px"}}>{monProfil}</button>
 
             
             <button id="addFormation" onClick={()=>{
@@ -31,9 +35,10 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             <button id="realisation" onClick={()=>{
                 setRealisation(realisation==='' ? "none" : "");
+                setMesRealisations(mesRealisations==="Ajouter Realisations" ? "Masquer Realisations" : "Ajouter Realisations");
                 
                 }}
-                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Realisation</button>
+                className="Outil" style={{display:"block",height:"40px"}}>{mesRealisations}</button>
             <button id="langue" onClick={()=>{setAddLanguage([...addLanguage,{visible:"visible"}])}}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
 
@@ -43,8 +48,8 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             <button id="centresInteret" onClick={()=>{setAddCentresInteret([...addCentresInteret,{visible:"visible"}])}}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Centre d'intérêt</button>
-            <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],maxWidth:"900px",ignoreElements:['Outils']}) } >
-                Print Form
+            <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],maxWidth:"900px",}) } >
+                Imprimer CV
             </button>
 
         </div>
