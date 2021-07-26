@@ -5,13 +5,21 @@
  
 .App{
     position:relative;
-    display:flex;
+    display: flex;
     width: 1488px;
     height:auto;
     margin-left: auto;
     margin-right: auto;
     border: gainsboro 5px solid;
    
+}
+.myTitreNav{
+    
+    position:absolute;
+    top: 0px;
+    width: 1488px;
+    height: 300px;
+    background-image: radial-gradient(to top,red,red);
 }
 
 .listeOutils{
@@ -109,6 +117,15 @@ img{
 
 }
 
+.myExperience{
+    position: relative;
+    display: list-item;
+    padding-left: 30px;
+    padding-top: 10px;
+    margin: 5px;
+   
+}
+
 .myFormation{
     position: relative;
     display: list-item;
@@ -140,14 +157,7 @@ img{
 
 
 
-.myExperience{
-    position: relative;
-    display: list-item;
-    padding-left: 15px;
-    padding-top: 10px;
-    margin: 5px;
-   
-}
+
 
 .dateDebutE{
     grid-area: dateDebutE;
@@ -190,6 +200,7 @@ img{
     padding-bottom: 20px;
     margin: 5px;
     padding: 5px;
+    margin-left: 25px;
 
 }
 .invisible{
