@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import printJS from 'print-js';
 
-import '../App.css';
+
 
 function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,setAddExperience,realisation,setRealisation,addLanguage,setAddLanguage,addCentresInteret,addQualites,setAddQualites,setAddCentresInteret}) {
     
@@ -48,7 +48,7 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
             <button id="centresInteret" onClick={()=>{setAddCentresInteret([...addCentresInteret,{visible:"visible"}])}}
                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Centre d'intérêt</button>
-            <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],maxWidth:"900px",}) } >
+            <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],}) } >
                 Imprimer CV
             </button>
 

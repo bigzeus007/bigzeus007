@@ -25,19 +25,19 @@ function App() {
 
   
   return (
-    <div className="App">
+      <div className="App">
+
       <div className="myTitreNav">CV CREATOR</div>
-      
+        
       <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} 
       addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} 
       addLanguage={addLanguage} setAddLanguage={setAddLanguage} addQualites={addQualites} setAddQualites={setAddQualites} addCentresInteret={addCentresInteret}
       setAddCentresInteret={setAddCentresInteret}
       />
-      <form className="monCV" id="monCV"      >
+
+      <form className="monCV" id="monCV">
          
-        
         <div className="corpsCV" >
-          
           <div className="leSecondaire">
             <Entete />
             <Divers  />

@@ -5,8 +5,11 @@
  
 .App{
     position:relative;
-    display: flex;
-    width: 1488px;
+    display:grid;
+    grid-template-areas: 
+    "myTitreNav myTitreNav"
+    "listeOutils corpsCV";
+    width: 1500px;
     height:auto;
     margin-left: auto;
     margin-right: auto;
@@ -14,25 +17,31 @@
    
 }
 .myTitreNav{
-    
-    position:absolute;
-    top: 0px;
+    grid-area: myTitreNav;
+    position:relative;
+    display: block;
     width: 1488px;
-    height: 300px;
-    background-image: radial-gradient(to top,red,red);
+    height: 250px;
+    background-color: violet;
 }
 
 .listeOutils{
-    position: relative;
-    display: grid;
-    
+    grid-area: listeOutils;
+    position: relative;    
     grid-template-rows: repeat(10,55px);
     background-image: linear-gradient(to top,rgb(0, 0, 0),rgb(255, 0, 0));
-    
-    width: 228px;
+    width: 100%;
+    height:auto;
+}
+
+.corpsCV{
+    grid-area: corpsCV;
+    position: relative;
+    display: grid;
+    width: 100%;
     height:auto;
     
-  
+    grid-template-columns: 25% 75%;
 }
 .Outil{
     position: relative;
@@ -41,12 +50,7 @@
     right: auto;
     
 }
-.monCV{
-    position: relative;
-    width:1170px;
-    height:auto;
-    
-}
+
 .Entete{
     position: relative;
     display: grid;
@@ -99,11 +103,7 @@ img{
 }
 
 
-.corpsCV{
-    display: grid;
-    
-    grid-template-columns: 25% 75%;
-}
+
 .formation, .experiences, .realisations, .langues, .profil, .qualitesD, .centresInteretD, .divers{
     
     display:grid;
