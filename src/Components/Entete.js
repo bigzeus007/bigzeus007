@@ -2,9 +2,10 @@ import React, { useState} from 'react';
 
 
 
+
 function Entete(){
 
-    const [myPreview,setMyPreview]=useState(null)
+    const [myPreview,setMyPreview]=useState('');
 
     return(
         <div className="Entete">
@@ -19,6 +20,7 @@ function Entete(){
                 
             }}/>
             <img src={myPreview} alt="myPhoto" />
+            <img src="images/photo-profil.jpg" alt="myPhoto" style={{width:"100px"}}/>
         </div>
         
         

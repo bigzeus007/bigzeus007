@@ -27,7 +27,7 @@ function App() {
   return (
       <div className="App">
 
-      <div className="myTitreNav">CV CREATOR</div>
+      <div className="myTitreNav"> Préparer mon Curriculum Vitae!. </div>
         
       <Outils addFormation={addFormation} setAddFormation={setAddFormation} profil={profil} setProfil={setProfil} 
       addExperience={addExperience} setAddExperience={setAddExperience} realisation={realisation} setRealisation={setRealisation} 

@@ -20,24 +20,32 @@
     grid-area: myTitreNav;
     position:relative;
     display: block;
-    width: 1488px;
+    width: 1490px;
     height: 250px;
-    background-color: violet;
+    background-image: linear-gradient(to left,black,red);
+    font-size: 60px;
+    text-align:center;
+    padding: 55px;
+    color:mintcream;
+    
 }
 
 .listeOutils{
     grid-area: listeOutils;
-    position: relative;    
+    position:relative;
+    justify-items: center;
     grid-template-rows: repeat(10,55px);
     background-image: linear-gradient(to top,rgb(0, 0, 0),rgb(255, 0, 0));
     width: 100%;
-    height:auto;
+   
 }
 
 .corpsCV{
     grid-area: corpsCV;
     position: relative;
     display: grid;
+    padding: 5px;
+    border: black 10px solid;
     width: 100%;
     height:auto;
     
@@ -66,6 +74,8 @@ img{
     width:265px;
     height:265px;
     border-radius:100%;
+    border: chartreuse 2px solid;
+    
 }
 
 .coordonnees{

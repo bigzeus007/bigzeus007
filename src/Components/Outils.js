@@ -12,7 +12,7 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
 
     return(
         <div className="listeOutils" id="listOutils">
-            <div> Boite a outils</div>
+            
 
             <button id="profil" onClick={()=>{
                 setProfil(profil==='' ? "none" : "");
