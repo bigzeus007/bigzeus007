@@ -71,12 +71,32 @@
    
 }
 img{
+    position: absolute;
+    top: 0px;
     width:265px;
     height:265px;
     border-radius:100%;
     border: chartreuse 2px solid;
     
+    
 }
+#image{
+    position:absolute;
+    padding-left: 20px;
+    padding-top: 120px;
+    display: none;
+    
+}
+#myButtonPhoto{
+    width:265px;
+    height:265px;
+    border-radius:100%;
+    border: chartreuse 2px solid;
+    background-color: transparent;
+    
+    
+}
+
 
 .coordonnees{
     position: relative;
@@ -225,7 +245,7 @@ img{
     position: relative;
     width: 295px;
     border-right: 5px solid;
-    background-image: linear-gradient(to top,rgba(236, 218, 218, 0.795),rgba(247, 235, 235, 0.973));
+    
     
 
 }

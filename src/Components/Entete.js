@@ -1,16 +1,19 @@
-import React, { useState} from 'react';
+import React, { useEffect, useRef, useState} from 'react';
 
+import myLogo from "../images/photo-profil.jpg"
 
 
 
 function Entete(){
-
-    const [myPreview,setMyPreview]=useState('');
+    
+    const photoClickRef = useRef();
+    const [myPreview,setMyPreview]=useState(myLogo);
+    
 
     return(
         <div className="Entete">
         <div>
-            <input id="image" type="file" className="image" onChange={(e)=>{
+            <input id="image" ref={photoClickRef} type="file" className="image" onChange={(e)=>{
                 let reader = new FileReader();
                 reader.onload = function(e) {
                     setMyPreview(reader.result);
@@ -19,8 +22,10 @@ function Entete(){
                 reader.readAsDataURL(e.target.files[0]);
                 
             }}/>
-            <img src={myPreview} alt="myPhoto" />
-            <img src="images/photo-profil.jpg" alt="myPhoto" style={{width:"100px"}}/>
+            <button id="myButtonPhoto" onClick={(event)=>{event.preventDefault();photoClickRef.current.click();}} ></button>
+            <img id="x" style={{zIndex:-1}} src={myPreview} alt="myPhoto" />
+            
+           
         </div>
         
         
