@@ -19,35 +19,35 @@ function Outils({addFormation, setAddFormation,profil,setProfil,addExperience,se
                 setMonProfil(monProfil==="Masquer Profil" ? "Ajouter Profil" : "Masquer Profil");
                 
                 }}
-                 className="Outil" style={{display:"block",height:"40px"}}>{monProfil}</button>
+                 className="Outil" >{monProfil}</button>
 
             
             <button id="addFormation" onClick={()=>{
                 setAddFormation([...addFormation,{titre:"visible", contenu:""}]);
                 
                 }}
-                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Formation</button>
+                 className="Outil" >Ajouter Formation</button>
             <button id="addExp" onClick={()=>{
                 setAddExperience([...addExperience,{titre:"visible", contenu:""}]);
                 
                 }}
-                 className="Outil" style={{display:"block",height:"40px"}}>Ajouter Experience</button>
+                 className="Outil" >Ajouter Experience</button>
 
             <button id="realisation" onClick={()=>{
                 setRealisation(realisation==='' ? "none" : "");
                 setMesRealisations(mesRealisations==="Ajouter Realisations" ? "Masquer Realisations" : "Ajouter Realisations");
                 
                 }}
-                className="Outil" style={{display:"block",height:"40px"}}>{mesRealisations}</button>
+                className="Outil" >{mesRealisations}</button>
             <button id="langue" onClick={()=>{setAddLanguage([...addLanguage,{visible:"visible"}])}}
-                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Langue</button>
+                className="Outil" >Ajouter Langue</button>
 
             
             <button id="qualites" onClick={()=>{setAddQualites([...addQualites,{visible:"visible"}])}}
-                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Qualité</button>
+                className="Outil" >Ajouter Qualité</button>
 
             <button id="centresInteret" onClick={()=>{setAddCentresInteret([...addCentresInteret,{visible:"visible"}])}}
-                className="Outil" style={{display:"block",height:"40px"}}>Ajouter Centre d'intérêt</button>
+                className="Outil" >Ajouter Centre d'intérêt</button>
             <button id="print" className="Outil" type="button" onClick={()=>printJS( {printable:'monCV',type:'html',targetStyles:['*'],}) } >
                 Imprimer CV
             </button>

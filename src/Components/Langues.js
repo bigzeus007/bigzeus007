@@ -13,7 +13,7 @@ function Langues({addLanguage,setAddLanguage}) {
             {addLanguage.map((element,index)=>(
 
             <div key={element+" "+index} name="ChoixDeLangue" className={element.visible}>
-                <select name="maLangue" style={{width:"100px"}} >
+                <select name="maLangue" style={{width:"30%"}} >
                     <option value="Anglais">ANGLAIS</option>
                     <option value="FRANCAIS">FRANCAIS</option>
                     <option value="ESPAGNOL">ESPAGNOL</option>
@@ -26,7 +26,7 @@ function Langues({addLanguage,setAddLanguage}) {
                 <input type="radio" name="langue"></input>
                 <input type="radio" name="langue"></input>
                 <input type="radio" name="langue"></input>
-                <button style={{color:"red",width:"65px",height:"20px"}} onClick={(event)=>{event.preventDefault();removeMyLanguage(index);}} > Retirer </button>
+                <button style={{color:"red",width:"20%",height:"20px"}} onClick={(event)=>{event.preventDefault();removeMyLanguage(index);}} > Retirer </button>
             </div>))}
         </div>
         </>

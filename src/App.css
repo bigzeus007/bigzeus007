@@ -6,21 +6,22 @@
 .App{
     position:relative;
     display:grid;
+    grid-template-columns: 20% 80%;
     grid-template-areas: 
     "myTitreNav myTitreNav"
     "listeOutils corpsCV";
-    width: 1500px;
+    
     height:auto;
     margin-left: auto;
     margin-right: auto;
-    border: gainsboro 5px solid;
+    min-width: 800px;
    
 }
 .myTitreNav{
     grid-area: myTitreNav;
     position:relative;
     display: block;
-    width: 1490px;
+    width: 100%;
     height: 250px;
     background-image: linear-gradient(to left,black,red);
     font-size: 60px;
@@ -53,17 +54,18 @@
 }
 .Outil{
     position: relative;
-    width: 80%;
-    left: 10%;
-    right: auto;
+    width: 90%;
+    left: 5%;
+    height: 7%;
+    min-width: 150px;
+    
     
 }
 
 .Entete{
     position: relative;
     display: grid;
-    width:290px;
-    height: 290px;
+ 
     grid-template-columns: 30% 70%;
    
     
@@ -73,8 +75,9 @@
 img{
     position: absolute;
     top: 0px;
-    width:265px;
-    height:265px;
+
+    width:100%;
+    height:100%;
     border-radius:100%;
     border: chartreuse 2px solid;
     
@@ -88,10 +91,10 @@ img{
     
 }
 #myButtonPhoto{
-    width:265px;
-    height:265px;
+    width:283px;
+    height:283px;
     border-radius:100%;
-    border: chartreuse 2px solid;
+    border-color: transparent;
     background-color: transparent;
     
     
@@ -109,11 +112,12 @@ img{
 .coordonnees > label{
     font-style: italic;
     font-size:small;
+    margin-left: 10%;
 }
 .coordonnees > input{
     font-style:oblique;
     font-size:medium;
-    width: 150px;
+    width: 90%;
    
     
 
@@ -238,12 +242,12 @@ img{
 }
 .lePrioritaire{
     position: relative;
-    width: 850px;
+    width: 100%x;
     
 }
 .leSecondaire{
     position: relative;
-    width: 295px;
+    width: 100%;
     border-right: 5px solid;
     
     
